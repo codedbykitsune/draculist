@@ -2,6 +2,10 @@
 
 A Dracula-themed responsive product listing app created for the Siliconmade Academy BE132 Backend Bootcamp.
 
+## Live Demo
+
+[Draculist](https://codedbykitsune.github.io/draculist/)
+
 ## Features
 
 - Fetches products from the DummyJSON API
