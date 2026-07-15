@@ -1,0 +1,286 @@
+/* Dracula theme renkleri */
+:root {
+  --dracula-background: #282a36;
+  --dracula-background-dark: #191a21;
+  --dracula-card: #343746;
+  --dracula-current-line: #44475a;
+  --dracula-foreground: #f8f8f2;
+  --dracula-comment: #6272a4;
+  --dracula-cyan: #8be9fd;
+  --dracula-green: #50fa7b;
+  --dracula-orange: #ffb86c;
+  --dracula-pink: #ff79c6;
+  --dracula-purple: #bd93f9;
+  --dracula-red: #ff5555;
+  --dracula-yellow: #f1fa8c;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--dracula-background);
+  color: var(--dracula-foreground);
+}
+
+/* Sayfanın üst bölümü */
+header {
+  background-color: var(--dracula-background-dark);
+  border-bottom: 1px solid var(--dracula-current-line);
+}
+
+header h1 {
+  color: var(--dracula-purple);
+  font-weight: 700;
+}
+
+.header-description {
+  color: var(--dracula-comment);
+}
+
+/* Ana içerik başlığı ve ürün sayısı */
+main h2 {
+  color: var(--dracula-foreground);
+}
+
+.product-count-badge {
+  padding: 0.6rem 0.9rem;
+  background-color: var(--dracula-purple);
+  color: var(--dracula-background);
+  font-size: 0.9rem;
+}
+
+/* Yükleniyor alanı */
+.spinner-border {
+  color: var(--dracula-purple);
+}
+
+#loading p {
+  color: var(--dracula-comment);
+}
+
+/* Hata mesajı */
+.alert-danger {
+  background-color: rgba(255, 85, 85, 0.15);
+  border-color: var(--dracula-red);
+  color: var(--dracula-red);
+}
+
+/* Ürün kartları */
+.product-card {
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--dracula-card);
+  color: var(--dracula-foreground);
+  border: 1px solid var(--dracula-current-line);
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--dracula-purple);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+/* Karttaki ürün görseli */
+.product-image {
+  width: 100%;
+  height: 230px;
+  padding: 1rem;
+  object-fit: contain;
+  background-color: var(--dracula-current-line);
+}
+
+/* Kart başlığı */
+.card-title {
+  min-height: 48px;
+  color: var(--dracula-pink);
+  font-weight: 700;
+}
+
+/* Kart içindeki normal metinler */
+.product-card p {
+  color: var(--dracula-foreground);
+}
+
+/* Fiyat, puan ve stok başlıkları */
+.product-card strong {
+  color: var(--dracula-cyan);
+}
+
+/* Kategori badge */
+.category-badge {
+  background-color: var(--dracula-purple);
+  color: var(--dracula-background);
+}
+
+/* Kart fiyat alanı */
+.card-price-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.original-price {
+  color: var(--dracula-comment);
+  text-decoration: line-through;
+}
+
+.discounted-price,
+.regular-price {
+  color: var(--dracula-cyan);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+/* İndirim rozeti */
+.discount-badge {
+  background-color: #d46e54;
+  color: var(--dracula-foreground);
+}
+
+/* Stok renkleri */
+.high-stock {
+  color: var(--dracula-green);
+  font-weight: 700;
+}
+
+.medium-stock {
+  color: var(--dracula-orange);
+  font-weight: 700;
+}
+
+.critical-stock {
+  color: #ce573a;
+  font-weight: 700;
+}
+
+/* Detay butonu */
+.detail-button {
+  background-color: var(--dracula-purple);
+  border-color: var(--dracula-purple);
+  color: var(--dracula-background);
+  font-weight: 700;
+}
+
+.detail-button:hover,
+.detail-button:focus {
+  background-color: var(--dracula-pink);
+  border-color: var(--dracula-pink);
+  color: var(--dracula-background);
+}
+
+/* Modal */
+.modal-content {
+  background-color: var(--dracula-card);
+  color: var(--dracula-foreground);
+  border: 1px solid var(--dracula-current-line);
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--dracula-current-line);
+}
+
+.modal-title {
+  color: var(--dracula-purple);
+  font-weight: 700;
+}
+
+.modal-body h3 {
+  color: var(--dracula-pink);
+}
+
+.modal-body strong {
+  color: var(--dracula-cyan);
+}
+
+.modal-description {
+  color: #c7c9d1;
+}
+
+/* Modal içindeki büyük ürün görseli */
+.product-detail-image {
+  width: 100%;
+  max-height: 400px;
+  padding: 1rem;
+  object-fit: contain;
+  background-color: var(--dracula-current-line);
+  border-radius: 10px;
+}
+
+/* Modal fiyat alanı */
+.product-price-area {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.product-original-price {
+  color: var(--dracula-comment);
+  font-size: 1.1rem;
+  text-decoration: line-through;
+}
+
+.product-detail-price {
+  color: var(--dracula-cyan);
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.product-detail-rating {
+  color: var(--dracula-yellow);
+  font-weight: 600;
+}
+
+/* Modal ürün özellikleri */
+.product-detail-list {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.product-detail-list .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: transparent;
+  color: var(--dracula-foreground);
+  border-color: var(--dracula-current-line);
+}
+
+.product-detail-list .list-group-item strong {
+  flex-shrink: 0;
+  color: var(--dracula-cyan);
+}
+
+.product-detail-list .list-group-item span {
+  text-align: right;
+}
+
+/* Ürün etiketleri */
+.tag-badge {
+  background-color: var(--dracula-current-line);
+  color: var(--dracula-foreground);
+  border: 1px solid var(--dracula-comment);
+}
+
+/* Bootstrap kapatma butonunu koyu zeminde görünsün */
+.btn-close {
+  filter: invert(1);
+}
+
+/* Küçük ekranlarda görselleri biraz küçült */
+@media (max-width: 576px) {
+  .product-image {
+    height: 200px;
+  }
+
+  .product-detail-image {
+    max-height: 300px;
+  }
+}
