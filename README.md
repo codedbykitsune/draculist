@@ -1,17 +1,17 @@
 # Draculist
 
-A Dracula-themed responsive product catalog created for the Siliconmade Academy BE132 Backend Bootcamp.
+A Dracula-themed responsive product listing app created for the Siliconmade Academy BE132 Backend Bootcamp.
 
 ## Features
 
-- Products fetched from the DummyJSON API
-- Responsive product cards built with Bootstrap
-- Product details displayed in a Bootstrap modal
-- Discounted price calculation
-- Color-coded stock levels
-- Dracula-inspired theme
+- Fetches products from the DummyJSON API
+- Displays products in responsive Bootstrap cards
+- Shows product details in a Bootstrap modal
+- Calculates discounted prices
+- Uses color-coded stock levels
+- Includes a Dracula-inspired theme
 
-## Technologies
+## Built With
 
 - HTML
 - CSS
@@ -20,7 +20,14 @@ A Dracula-themed responsive product catalog created for the Siliconmade Academy 
 - Fetch API
 
 ## API
-
 Product data is fetched from:
-
 `https://dummyjson.com/products`
+
+## Project Structure
+
+```text
+draculist/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
